@@ -1,0 +1,41 @@
+<div class="login-main" *ngIf="showSplash" [ngStyle]="{ left: windowWidth }">
+  <div class="top-bar">
+    <mat-icon class="logo">commute</mat-icon>
+  </div>
+  <div class="input-field">
+    <div class="header">IK Portala Hoş Geldiniz</div>
+    <div class="info">Devam etmek için oturum açın.</div>
+    <img class="image" src="assets/images/portalpic.png" />
+    <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline" class="mat-form">
+        <input
+          matInput
+          placeholder="Kullanıcı Adı"
+          type="email"
+          formControlName="username"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="mat-form">
+        <input
+          matInput
+          placeholder="Şifre"
+          type="password"
+          formControlName="password"
+        />
+      </mat-form-field>
+
+      <button class="forget" mat-button>Şifremi Unuttum</button>
+
+      <button type="submit" class="okay" mat-raised-button>Giriş Yap</button>
+    </form>
+
+    <div class="alert" *ngIf="flag">Kullanıcı bilgileri yanlış.</div>
+
+    <div class="sign">
+      <p>Hesabınız yok mu? &nbsp;</p>
+      <br />
+      <p style="color: #773dbd; cursor: pointer">Üye Ol</p>
+    </div>
+  </div>
+</div>

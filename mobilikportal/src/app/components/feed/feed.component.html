@@ -1,0 +1,79 @@
+<div class="feed-main">
+  <div class="top-bar">
+    <div class="user">
+      <div class="user-info">
+        <p class="user-greet">Merhaba, Kamil</p>
+        <p class="date">Çarşamba 4 Ocak 2023</p>
+      </div>
+      <img class="image" src="assets/images/profile.png" />
+    </div>
+    <div class="perms">
+      <div class="perm-info">
+        <p class="p1">65</p>
+        <p class="p2">Kalan Yıllık İzin Hakkım</p>
+      </div>
+      <div class="perm-info">
+        <p class="p1">22</p>
+        <p class="p2">Toplam Kullanılan</p>
+      </div>
+      <div class="perm-info">
+        <p class="p1">43</p>
+        <p class="p2">Kalan İzin Günüm</p>
+      </div>
+    </div>
+  </div>
+  <div class="feed-field">
+    <div class="feed-cont">
+      <p class="title">İşlemler</p>
+      <div class="operations">
+        <button mat-raised-button class="b1">
+          <mat-icon>description</mat-icon>
+          <p class="butontext">Evraklarım</p>
+        </button>
+        <button mat-raised-button class="b2">
+          <mat-icon>copy_all</mat-icon>
+          <p class="butontext">Bordrolarım</p>
+        </button>
+      </div>
+      <div class="births">
+        <p class="title">Bu Ay Doğanlar</p>
+        <mat-card class="card">
+          <mat-card-content class="card-content">
+            <img class="imagecake" src="assets/images/cake.png" />
+            <div class="birth-user-div">
+              <p class="birth-user">Buğra Dere . 01.01.2023</p>
+              <img class="imagecircles" src="assets/images/circles.png" />
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="events">
+        <p class="title">Etkinlik ve Duyurular</p>
+        <img class="imagehello" src="assets/images/hello.png" />
+        <p class="title-purp">Firma İç İletişim Lansmanı</p>
+        <p class="info-purp">21 Ocak, 2023</p>
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="menu-items-home">
+      <mat-icon>home</mat-icon>
+      <p class="menu-label">Ana Sayfa</p>
+    </div>
+    <div class="menu-items">
+      <mat-icon>campaign</mat-icon>
+      <p class="menu-label">İlanlar</p>
+    </div>
+    <div>
+      <button class="menu-button" (click)="openBottomSheet()">+</button>
+    </div>
+    <div class="menu-items">
+      <mat-icon>poll</mat-icon>
+      <p class="menu-label">Anketler</p>
+    </div>
+    <div class="menu-items">
+      <mat-icon>article</mat-icon>
+      <p class="menu-label">Talepler</p>
+    </div>
+  </div>
+</div>
